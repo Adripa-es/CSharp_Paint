@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Paint.exe" version="1.0.0.2" publicKeyToken="0e2d67c126b0dcc6" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Paint" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Paint.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si quiere cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Paint.exe" size="14768">
+      <assemblyIdentity name="Paint" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>rFMXqGERZSB2/IePlq16eIeSPx1NTQ8EvFg8/EYQZLU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Paint.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=PC-ADRI\adrip" issuerKeyHash="64c1cf1be13334c872c54371e30eedf0ad8d721b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>iqL19Lhmwh1PjWGjk2Jb9R0Kzj/eSKhiBuccsbsC5r8=</DigestValue></Reference></SignedInfo><SignatureValue>ZgazEAdNdxmTvIaeNeOEDmKSSRcqiiyblJr4tk7URqnb7X/Ey8XTSedux6zvch1xTgaBXEnVQtiBRynF3m6xKEIYEASaSl21sPSpWOntWne681wtABAlcIZyZuZgTEWSJzCmeEiNYtZtGW66inLvkHpt5c3NAsrgobUqrzqGtT0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rKsv1XXM0yXbN174lx3//+htOpy1ziMPlktF6abRLZeyLsFfk10qV0VDkwEdFDm8YdiYIVfe7oKmtJzS/DkUMAwEJd7iJ9c6mKHS3nko9qsjObq6iPyA2FYhIvQgq0Ji1VxAUooN8msO9C373BnLNX/rbMq2yes5W+VfEC/ecKU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bfe602bbb11ce70662a848de3fce0a1df55b6293a3618d4f1dc266b8f4f5a28a" Description="" Url=""><as:assemblyIdentity name="Paint.exe" version="1.0.0.2" publicKeyToken="0e2d67c126b0dcc6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PC-ADRI\adrip</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>LJ47jKarZ55bCiTNEXtqGiQY2bs8wZ9cW8yWUFKILzs=</DigestValue></Reference></SignedInfo><SignatureValue>GIWmq0P5usJkd1JBG84o9ZVJIzJ9sPUoKamceCeRtdjcLGviNmr/cB0llteN88jahqVBa1kILZCE0r+8T9snNXYhJAToiS8dkQvXckC2FcuOUoUneEEdkm/WxnzvbaKbYJgLmIwWZfcH6TDqVEcitd6jlTtOTKyVUmVEwPTHdHA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rKsv1XXM0yXbN174lx3//+htOpy1ziMPlktF6abRLZeyLsFfk10qV0VDkwEdFDm8YdiYIVfe7oKmtJzS/DkUMAwEJd7iJ9c6mKHS3nko9qsjObq6iPyA2FYhIvQgq0Ji1VxAUooN8msO9C373BnLNX/rbMq2yes5W+VfEC/ecKU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBzTCCATagAwIBAgIQMt3oN2t+woFCIatqbxGUizANBgkqhkiG9w0BAQsFADAlMSMwIQYDVQQDHhoAUABDAC0AQQBEAFIASQBcAGEAZAByAGkAcDAeFw0yMzAxMjUxODA1NDRaFw0yNDAxMjYwMDA1NDRaMCUxIzAhBgNVBAMeGgBQAEMALQBBAEQAUgBJAFwAYQBkAHIAaQBwMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsqy/VdczTJds3XviXHf//6G06nLXOIw+WS0XpptEtl7IuwV+TXSpXRUOTAR0UObxh2JghV97ugqa0nNL8ORQwDAQl3uIn1zqYodLeeSj2qyM5urqI/IDYViEi9CCrQmLVXEBSig3yaw70LfvcGcs1f+tsyrbJ6zlb5V8QL95wpQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAAFpNEYX/V38BXX5lUHOzZDktsnBte3XcgsZOa+TzUkP/V6rk3WxJNAudfdz3uk/7a1Nt8Q0iMD9I8J1gFa3bKe10yQgcwajlmm9HYAxZHriEaelaGtMstVIwu3BShDSL8nzgokiAolBJVizHm5Vw7mpT3l2LasmH+nmwivwD0X0</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
